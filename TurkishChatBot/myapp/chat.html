@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Bot</title>
+</head>
+<body>
+    <h1>Chat Bot</h1>
+    <div id="chatbox">
+        <p>Bot: Merhaba! Nasıl yardımcı olabilirim?</p>
+    </div>
+    <form id="message-form">
+        <input type="text" id="message-input">
+        <button type="submit">Gönder</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#message-form').submit(function(event) {
+                event.preventDefault();
+                var userMessage = $('#message-input').val();
+                $('#message-input').val('');
+                $('#chatbox').append('<p>Kullanıcı: ' + userMessage + '</p>');
+                $.get('/chatbot/', {msg: userMessage}, function(response) {
+                    $('#chatbox').append('<p>Bot: ' + response.response + '</p>');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

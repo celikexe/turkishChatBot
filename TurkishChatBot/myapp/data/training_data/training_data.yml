@@ -1,0 +1,16 @@
+categories:
+- Telefon
+- Fatura
+- Şikayet
+- Öneri
+conversations:
+- - Benim telefonum bozuldu.
+  - Tamir için teknik servisimizle iletişime geçebilirsiniz.
+- - Faturamı ödemedim, ne yapmalıyım?
+  - Faturanızı ödemeniz gerekiyor. Fatura ödeme sayfamızdan ödeme yapabilirsiniz.
+- - İnternet bağlantım çok yavaş.
+  - Teknik desteğimizle iletişime geçebilirsiniz. Sorununuzu çözmek için yardımcı olacaklar.
+- - Ürünlerinizde bir iyileştirme önerim var.
+  - Önerileriniz bizim için çok değerli. Lütfen önerilerinizi bize iletmek için iletişim formumuzu kullanın.
+- - Memnuniyetsizliklerim hakkında kiminle konuşabilirim?
+  - Şikayetlerinizi müşteri hizmetleri birimimize iletebilirsiniz. En kısa zamanda size geri döneceğiz.
